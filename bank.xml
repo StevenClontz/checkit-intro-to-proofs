@@ -49,14 +49,6 @@ Write negations of quantified statements and determine their truth values.
             </description>
         </outcome>
         <outcome>
-            <title>Existential and Universal Quantifiers</title>
-            <slug>LG5</slug>
-            <path>outcomes/LG/LG5</path>
-            <description>
-Write negations of quantified statements and determine their truth values.
-            </description>
-        </outcome>
-        <outcome>
             <title>Set Notation</title>
             <slug>ST1</slug>
             <path>outcomes/ST/ST1</path>
@@ -80,8 +72,8 @@ on finite sets of letters using Venn diagrams, and compute results.
             <slug>ST3</slug>
             <path>outcomes/ST/ST3</path>
             <description>
-Validate membership and subset relations for infinite sets
-and power sets of real numbers.
+Validate membership and subset relations for sets
+and power sets of integers.
             </description>
         </outcome>
     </outcomes>

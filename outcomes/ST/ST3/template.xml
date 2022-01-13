@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.2">
+    <statement>
+        <p>
+Let <m>\mathbb Z</m> be the set of integers,
+<m>\mathbb E=\left\{x\in\mathbb Z\middle|x\text{ is even}\right\}</m>,
+<m>\mathbb D=\mathbb Z\setminus\mathbb E</m>,
+<m>\mathcal P(X)=\left\{Y\middle|Y\subseteq X\right\}</m> for any set <m>X</m>,
+<m>[X]^1=\left\{\{x\}\middle|x\in X\right\}</m> for any set <m>X</m>, and
+<m>[X]^2=\left\{\{x,y\}\middle|x,y\in X\right\}</m> for any set <m>X</m>.
+        </p>
+        <p>
+Determine which of the symbols <m>\in,\subseteq</m> (if either)
+can be used to relate each of the following items with the sets
+<m>\mathbb Z,\mathbb E,\mathbb D</m>,
+the sets
+<m>\mathcal P(\mathbb Z),\mathcal P(\mathbb D),\mathcal P(\mathbb E)</m>,
+the sets
+<m>[\mathbb Z]^1,[\mathbb E]^1,[\mathbb D]^1</m>, and
+the sets
+<m>[\mathbb Z]^2,[\mathbb E]^2,</m> and <m>[\mathbb D]^2</m>.
+Give an explanation for each valid relationship.
+        </p>
+    </statement>
+    {{#elements}}
+        <task>
+            <statement>
+                <p>
+{{description}} <m>{{element}}</m>.
+                </p>
+            </statement>
+            <answer>
+                {{#is_int?}}
+                    <p>
+                        <m>
+{{element}}\in\mathbb Z
+                        </m>
+                    </p>
+                {{/is_int?}}
+                {{#is_even?}}
+                    <p>
+                        <m>
+{{element}}\in\mathbb E
+                        </m>
+                    </p>
+                {{/is_even?}}
+                {{#is_odd?}}
+                    <p>
+                        <m>
+{{element}}\in\mathbb D
+                        </m>
+                    </p>
+                {{/is_odd?}}
+                {{#is_int_sub?}}
+                    <p>
+                        <m>
+{{element}}\subseteq\mathbb Z
+                        </m>
+                    </p>
+                    <p>
+                        <m>
+{{element}}\in\mathcal P(\mathbb Z)
+                        </m>
+                    </p>
+                {{/is_int_sub?}}
+                {{#is_even_sub?}}
+                    <p>
+                        <m>
+{{element}}\subseteq\mathbb E
+                        </m>
+                    </p>
+                    <p>
+                        <m>
+{{element}}\in\mathcal P(\mathbb E)
+                        </m>
+                    </p>
+                {{/is_even_sub?}}
+                {{#is_odd_sub?}}
+                    <p>
+                        <m>
+{{element}}\subseteq\mathbb D
+                        </m>
+                    </p>
+                    <p>
+                        <m>
+{{element}}\in\mathcal P(\mathbb D)
+                        </m>
+                    </p>
+                {{/is_odd_sub?}}
+                {{#is_int_sing?}}
+                    <p>
+                        <m>
+{{element}}\in[\mathbb Z]^1
+                        </m>
+                    </p>
+                {{/is_int_sing?}}
+                {{#is_even_sing?}}
+                    <p>
+                        <m>
+{{element}}\in[\mathbb E]^1
+                        </m>
+                    </p>
+                {{/is_even_sing?}}
+                {{#is_odd_sing?}}
+                    <p>
+                        <m>
+{{element}}\in[\mathbb D]^1
+                        </m>
+                    </p>
+                {{/is_odd_sing?}}
+                {{#is_int_sing_sub?}}
+                    <p>
+                        <m>
+{{element}}\subseteq\mathcal P(\mathbb Z)
+                        </m>
+                    </p>
+                    <p>
+                        <m>
+{{element}}\subseteq[\mathbb Z]^1
+                        </m>
+                    </p>
+                {{/is_int_sing_sub?}}
+                {{#is_even_sing_sub?}}
+                    <p>
+                        <m>
+{{element}}\subseteq\mathcal P(\mathbb E)
+                        </m>
+                    </p>
+                    <p>
+                        <m>
+{{element}}\subseteq[\mathbb E]^1
+                        </m>
+                    </p>
+                {{/is_even_sing_sub?}}
+                {{#is_odd_sing_sub?}}
+                    <p>
+                        <m>
+{{element}}\subseteq\mathcal P(\mathbb D)
+                        </m>
+                    </p>
+                    <p>
+                        <m>
+{{element}}\subseteq[\mathbb D]^1
+                        </m>
+                    </p>
+                {{/is_odd_sing_sub?}}
+                {{#is_int_doub?}}
+                    <p>
+                        <m>
+{{element}}\in[\mathbb Z]^2
+                        </m>
+                    </p>
+                {{/is_int_doub?}}
+                {{#is_even_doub?}}
+                    <p>
+                        <m>
+{{element}}\in[\mathbb E]^2
+                        </m>
+                    </p>
+                {{/is_even_doub?}}
+                {{#is_odd_doub?}}
+                    <p>
+                        <m>
+{{element}}\in[\mathbb D]^2
+                        </m>
+                    </p>
+                {{/is_odd_doub?}}
+                {{#is_int_doub_sub?}}
+                    <p>
+                        <m>
+{{element}}\subseteq\mathcal P(\mathbb Z)
+                        </m>
+                    </p>
+                    <p>
+                        <m>
+{{element}}\subseteq[\mathbb Z]^2
+                        </m>
+                    </p>
+                {{/is_int_doub_sub?}}
+                {{#is_even_doub_sub?}}
+                    <p>
+                        <m>
+{{element}}\subseteq\mathcal P(\mathbb E)
+                        </m>
+                    </p>
+                    <p>
+                        <m>
+{{element}}\subseteq[\mathbb E]^2
+                        </m>
+                    </p>
+                {{/is_even_doub_sub?}}
+                {{#is_odd_doub_sub?}}
+                    <p>
+                        <m>
+{{element}}\subseteq\mathcal P(\mathbb D)
+                        </m>
+                    </p>
+                    <p>
+                        <m>
+{{element}}\subseteq[\mathbb D]^2
+                        </m>
+                    </p>
+                {{/is_odd_doub_sub?}}
+            </answer>
+        </task>
+    {{/elements}}
+</exercise>
