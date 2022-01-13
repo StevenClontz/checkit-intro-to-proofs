@@ -6,8 +6,8 @@ Let <m>\mathbb Z</m> be the set of integers,
 <m>\mathbb E=\left\{x\in\mathbb Z\middle|x\text{ is even}\right\}</m>,
 <m>\mathbb D=\mathbb Z\setminus\mathbb E</m>,
 <m>\mathcal P(X)=\left\{Y\middle|Y\subseteq X\right\}</m> for any set <m>X</m>,
-<m>[X]^1=\left\{\{x\}\middle|x\in X\right\}</m> for any set <m>X</m>, and
-<m>[X]^2=\left\{\{x,y\}\middle|x,y\in X\right\}</m> for any set <m>X</m>.
+<m>[X]^1=\left\{Y\subseteq X\big||Y|=1\right\}</m> for any set <m>X</m>, and
+<m>[X]^2=\left\{Y\subseteq X\big||Y|=2\right\}</m> for any set <m>X</m>.
         </p>
         <p>
 Determine which of the symbols <m>\in,\subseteq</m> (if either)
