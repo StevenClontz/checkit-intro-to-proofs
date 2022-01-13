@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.2">
+    {{#statements}}
+    <task>
+        <statement>
+            <p>
+Consider the following statement.
+                {{#disjunction}}
+                    {{#PQ0}}
+<q>Either <m>{{P}}</m> or <m>{{Q}}</m>.</q>
+                    {{/PQ0}}
+                    {{#QP0}}
+<q>Either <m>{{Q}}</m> or <m>{{P}}</m>.</q>
+                    {{/QP0}}
+                    {{#PQ1}}
+<q><m>{{P}}</m> or <m>{{Q}}</m>.</q>
+                    {{/PQ1}}
+                    {{#QP1}}
+<q><m>{{Q}}</m> or <m>{{P}}</m>.</q>
+                    {{/QP1}}
+                {{/disjunction}}
+                {{#conjunction}}
+                    {{#PQ0}}
+<q>Both <m>{{P}}</m> and <m>{{Q}}</m>.</q>
+                    {{/PQ0}}
+                    {{#QP0}}
+<q>Both <m>{{Q}}</m> and <m>{{P}}</m>.</q>
+                    {{/QP0}}
+                    {{#PQ1}}
+<q><m>{{P}}</m> and <m>{{Q}}</m>.</q>
+                    {{/PQ1}}
+                    {{#QP1}}
+<q><m>{{Q}}</m> and <m>{{P}}</m>.</q>
+                    {{/QP1}}
+                {{/conjunction}}
+                {{#implication}}
+                    {{#PQ0}}
+<q>If <m>{{P}}</m> then <m>{{Q}}</m>.</q>
+                    {{/PQ0}}
+                    {{#QP0}}
+<q>If <m>{{Q}}</m> then <m>{{P}}</m>.</q>
+                    {{/QP0}}
+                {{/implication}}
+            </p>
+        </statement>
+        <task>
+            <statement>
+                <p>
+Write a negation of this statement.
+                </p>
+            </statement>
+            <answer>
+            <p>
+                {{#disjunction}}
+                    {{#PQ0}}
+Both <m>{{notP}}</m> and <m>{{notQ}}</m>.
+                    {{/PQ0}}
+                    {{#QP0}}
+Both <m>{{notQ}}</m> and <m>{{notP}}</m>.
+                    {{/QP0}}
+                    {{#PQ1}}
+Both <m>{{notP}}</m> and <m>{{notQ}}</m>.
+                    {{/PQ1}}
+                    {{#QP1}}
+Both <m>{{notQ}}</m> and <m>{{notP}}</m>.
+                    {{/QP1}}
+                {{/disjunction}}
+                {{#conjunction}}
+                    {{#PQ0}}
+Either <m>{{notP}}</m> or <m>{{notQ}}</m>.
+                    {{/PQ0}}
+                    {{#QP0}}
+Either <m>{{notQ}}</m> or <m>{{notP}}</m>.
+                    {{/QP0}}
+                    {{#PQ1}}
+Either <m>{{notP}}</m> or <m>{{notQ}}</m>.
+                    {{/PQ1}}
+                    {{#QP1}}
+Either <m>{{notQ}}</m> or <m>{{notP}}</m>.
+                    {{/QP1}}
+                {{/conjunction}}
+                {{#implication}}
+                    {{#PQ0}}
+Both <m>{{P}}</m> and <m>{{notQ}}</m>.
+                    {{/PQ0}}
+                    {{#QP0}}
+Both <m>{{Q}}</m> and <m>{{notP}}</m>.
+                    {{/QP0}}
+                {{/implication}}
+            </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+If appropriate, write the converse, inverse, and contrapositive of
+the statement.
+                </p>
+            </statement>
+            <answer>
+                {{#disjunction}}
+<p>(not applicable)</p>
+                {{/disjunction}}
+                {{#conjunction}}
+<p>(not applicable)</p>
+                {{/conjunction}}
+                {{#implication}}
+                    {{#PQ0}}
+                        <ul>
+                            <li>
+                                <p>
+Converse: If <m>{{Q}}</m> then <m>{{P}}</m>.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+Inverse: If <m>{{notP}}</m> then <m>{{notQ}}</m>.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+Contrapositive: If <m>{{notQ}}</m> then <m>{{notP}}</m>.
+                                </p>
+                            </li>
+                        </ul>
+                    {{/PQ0}}
+                    {{#QP0}}
+                        <ul>
+                            <li>
+                                <p>
+Converse: If <m>{{P}}</m> then <m>{{Q}}</m>.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+Inverse: If <m>{{notQ}}</m> then <m>{{notP}}</m>.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+Contrapositive: If <m>{{notP}}</m> then <m>{{notQ}}</m>.
+                                </p>
+                            </li>
+                        </ul>
+                    {{/QP0}}
+                {{/implication}}
+            </answer>
+        </task>
+    </task>
+    {{/statements}}
+</exercise>

@@ -1,0 +1,31 @@
+# geometry
+equilateral
+isosceles
+large
+small
+
+# topology
+connected
+disconnected
+dense
+compact
+regular
+normal
+metrizable
+
+# algebra
+commutative
+simple
+ideal
+
+# number theory
+prime
+composite
+even
+odd
+
+# misc
+finite
+infinite
+countable
+uncountable

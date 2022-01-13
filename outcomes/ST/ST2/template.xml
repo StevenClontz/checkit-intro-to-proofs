@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.2">
+    <statement>
+        <p>
+Assume we are considering the set-theoretic universe of
+the first ten lowercase English letters
+<m>\mathcal{U} = \{a,b,\dots,j\}</m>, and
+let <m>X=\{ {{X}} \}</m> and <m>Y = \{ {{Y}} \}</m>.
+        </p>
+        <p>
+Explain and demonstrate how to find each of the following
+(using symbolic notation, e.g. <m>\cup,\cap,\dots</m>).
+        </p>
+    </statement>
+    <task>
+        <statement>
+            <p>
+The cardinalities of <m>X</m> and <m>Y</m>.
+            </p>
+        </statement>
+        <answer>
+            <p>
+<m>|X| = {{Xcard}}</m> and <m>|Y| = {{Ycard}}</m>.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+The Venn diagram representation of <m>X</m> and <m>Y</m>
+in this universe.
+            </p>
+        </statement>
+        <answer>
+            <p>
+(illustration not provided)
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+The union of <m>X</m> and <m>Y</m>.
+            </p>
+        </statement>
+        <answer>
+            <p>
+<m>X\cup Y = \{ {{union}} \}</m>.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+The intersection of <m>X</m> and <m>Y</m>.
+            </p>
+        </statement>
+        <answer>
+            <p>
+<m>X\cap Y = \{ {{intersection}} \}</m>.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+The complement of <m>{{complement_set}}</m>.
+            </p>
+        </statement>
+        <answer>
+            <p>
+<m>\overline{ {{complement_set}} } =
+\mathcal{U} \setminus {{complement_set}} =
+\mathcal{U} - {{complement_set}} = \{ {{complement}} \}</m>.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+The difference of <m>{{difference_first}}</m> and <m>{{difference_second}}</m>.
+            </p>
+        </statement>
+        <answer>
+            <p>
+<m>{{difference_first}} \setminus {{difference_second}} =
+{{difference_first}} - {{difference_second}} = \{ {{difference}} \}</m>.
+            </p>
+        </answer>
+    </task>
+</exercise>

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bank xmlns="https://checkit.clontz.org" version="0.2">
+    <title>Introduction to Proofs</title>
+    <slug>intro-to-proofs</slug>
+    <url>https://github.com/StevenClontz/checkit-intro-to-proofs</url>
+    <outcomes>
+        <outcome>
+            <title>Sentences</title>
+            <slug>LG1</slug>
+            <path>outcomes/LG/LG1</path>
+            <description>
+Identfiy whether given sentences are statements, open sentences,
+or neither.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Identify Statement Combinations</title>
+            <slug>LG2</slug>
+            <path>outcomes/LG/LG2</path>
+            <description>
+Identify given compound and (bi)conditional statements,
+and determine their truth values.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Statement Manipulations</title>
+            <slug>LG3</slug>
+            <path>outcomes/LG/LG3</path>
+            <description>
+Write negations of compound and conditional statements,
+and write converses, inverses, and contrapositives of implications.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Evaluate Statement Combinations</title>
+            <slug>LG4</slug>
+            <path>outcomes/LG/LG4</path>
+            <description>
+Write negations of combinations of compound and conditional statements,
+and determine their truth values.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Existential and Universal Quantifiers</title>
+            <slug>LG5</slug>
+            <path>outcomes/LG/LG5</path>
+            <description>
+Write negations of quantified statements and determine their truth values.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Existential and Universal Quantifiers</title>
+            <slug>LG5</slug>
+            <path>outcomes/LG/LG5</path>
+            <description>
+Write negations of quantified statements and determine their truth values.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Set Notation</title>
+            <slug>ST1</slug>
+            <path>outcomes/ST/ST1</path>
+            <description>
+Use set list and set builder notation to describe solution sets simple
+sets of real numbers.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Set Combinations</title>
+            <slug>ST2</slug>
+            <path>outcomes/ST/ST2</path>
+            <description>
+Illustrate operations
+(intersections, unions, complements, differences, cardinalities)
+on finite sets of letters using Venn diagrams, and compute results.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Membership and Subsets</title>
+            <slug>ST3</slug>
+            <path>outcomes/ST/ST3</path>
+            <description>
+Validate membership and subset relations for infinite sets
+and power sets of real numbers.
+            </description>
+        </outcome>
+    </outcomes>
+</bank>

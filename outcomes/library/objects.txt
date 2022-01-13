@@ -1,0 +1,28 @@
+# shapes
+polygon
+triangle
+quadrilateral
+trapezoid
+parallelogram
+rectangle
+square
+pentagon
+hexagon
+octogon
+circle
+ellipse
+
+# misc
+relation
+function
+group
+ring
+field
+space
+graph
+plane
+number
+integer
+rational number
+irrational number
+complex number

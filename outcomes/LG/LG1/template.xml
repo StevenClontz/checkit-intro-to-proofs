@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.2">
+    <statement>
+        <p>
+For each of the following sentences (using made-up combinations of
+mathematical jargon), explain why it would be best described
+as a statement, open sentence, or neither.
+        </p>
+    </statement>
+    {{#sentences}}
+        <task>
+            <statement>
+                <p>
+                    {{#statement}}
+{{qualifier}} {{stemprop}} {{obj}} {{verb}} {{prop}}.
+                    {{/statement}}
+                    {{#open}}
+The {{obj}} <m>{{variable}}</m> {{verb}} {{prop}}.
+                    {{/open}}
+                    {{#neither}}
+{{#fake_sentence}}
+    {{qualifier}} {{stemprop}} {{obj}}
+{{/fake_sentence}}
+{{#fake_open}}
+    The {{obj}} <m>{{variable}}</m>
+{{/fake_open}}
+{{subjective}}.
+                    {{/neither}}
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    {{#statement}}
+Statement.
+                    {{/statement}}
+                    {{#open}}
+Open sentence.
+                    {{/open}}
+                    {{#neither}}
+Neither.
+                    {{/neither}}
+                </p>
+            </answer>
+        </task>
+    {{/sentences}}
+</exercise>

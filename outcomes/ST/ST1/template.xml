@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.2">
+    <statement>
+        <p>
+Explain and demonstrate how to rewrite each of the following sets as indicated.
+        </p>
+    </statement>
+    {{#sets}}
+        <task>
+            <statement>
+                <p>
+                    {{#finite_list}}
+Rewrite <m>\left\{ {{var}} \in\mathbb Z 
+\middle| {{predicate}} \right\}</m>
+using set list notation.
+                    {{/finite_list}}
+                    {{#infinite_list}}
+Rewrite
+<m>\left\{ {{subject}} \middle| {{var}} \in\mathbb Z \right\}</m>
+using set list notation.
+                    {{/infinite_list}}
+                    {{#builder}}
+Rewrite
+<m>\left\{ {{#list}} \frac{ {{top}} }{ {{bottom}} }, {{/list}}
+\dots \right\}</m>
+using set builder notation.
+                    {{/builder}}
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    {{#finite_list}}
+<m>\left\{ {{#list}} {{item}}, {{/list}} {{last}} \right\}</m>
+                    {{/finite_list}}
+                    {{#infinite_list}}
+<m>\left\{ \dots, {{#list}} {{item}}, {{/list}} \dots \right\}</m>
+                    {{/infinite_list}}
+                    {{#builder}}
+<m>\left\{ \frac{ {{top}} }{ {{bottom }} } \middle| 
+{{var}} \in\mathbb Z^+ \right\}</m>
+                    {{/builder}}
+                </p>
+            </answer>
+        </task>
+    {{/sets}}
+</exercise>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.2">
+    <statement>
+        <p>
+Consider the following symbolic statement, where
+<m>P</m> is {{#P}}true{{/P}}{{^P}}false{{/P}},
+<m>Q</m> is {{#Q}}true{{/Q}}{{^Q}}false{{/Q}},
+<m>R</m> is {{#R}}true{{/R}}{{^R}}false{{/R}}, and
+<m>S</m> is {{#S}}true{{/S}}{{^S}}false{{/S}}.
+        </p>
+        <p>
+            <m style="display">
+{{statement}}
+            </m>
+        </p>
+    </statement>
+    <task>
+        <statement>
+            <p>
+Write the simplified negation of this statement symbolically.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>
+    {{negation}}
+                </m>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+Demonstrate how to determine if the original statement is true or false,
+and if the negation you found is true or false.
+            </p>
+        </statement>
+        <answer>
+            <p>
+The statement is {{#true}}true{{/true}}{{^true}}false{{/true}}.
+Its negation is {{#true}}false{{/true}}{{^true}}true{{/true}}.
+            </p>
+        </answer>
+    </task>
+</exercise>

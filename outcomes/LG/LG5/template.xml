@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.2">
+    {{#statements}}
+    <task>
+        <statement>
+            <p>
+Consider the following statement.
+                {{#universal}}
+<q>For all real numbers <m>x</m>, <m>{{open}}</m>.</q>
+                {{/universal}}
+                {{#existential}}
+<q>There exists a real number <m>x</m> such that <m>{{open}}</m>.</q>
+                {{/existential}}
+            </p>
+        </statement>
+        <task>
+            <statement>
+                <p>
+Write a negation of this statement.
+                </p>
+            </statement>
+            <answer>
+            <p>
+                {{#universal}}
+There exists a real number <m>x</m> such that <m>{{notopen}}</m>.
+                {{/universal}}
+                {{#existential}}
+For all real numbers <m>x</m>, <m>{{notopen}}</m>.
+                {{/existential}}
+            </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+Explain and demonstrate how to determine the truth values of this statement and its
+negation.
+                </p>
+            </statement>
+            <answer>
+                <p>
+The statement is {{#truth}}true{{/truth}}{{^truth}}false{{/truth}},
+and its negation is {{^truth}}true{{/truth}}{{#truth}}false{{/truth}}.
+                </p>
+            </answer>
+        </task>
+    </task>
+    {{/statements}}
+</exercise>

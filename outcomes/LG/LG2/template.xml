@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.2">
+    <task>
+        <statement>
+            <p>Determine the truth values of the following statements.</p>
+        </statement>
+        <task>
+            <statement>
+                <p><m>P</m>: <m>{{P}}</m></p>
+            </statement>
+            <answer>
+                <p>
+<m>P</m> is {{#Ptrue}}true{{/Ptrue}}{{^Ptrue}}false{{/Ptrue}}.
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p><m>Q</m>: <m>{{Q}}</m></p>
+            </statement>
+            <answer>
+                <p>
+<m>Q</m> is {{#Qtrue}}true{{/Qtrue}}{{^Qtrue}}false{{/Qtrue}}.
+                </p>
+            </answer>
+        </task>
+    </task>
+    {{#statements}}
+    <task>
+        <statement>
+            <p>
+Consider the following statement.
+                {{#disjunction}}
+                    {{#PQ0}}
+<q>Either <m>{{P}}</m> or <m>{{Q}}</m>.</q>
+                    {{/PQ0}}
+                    {{#QP0}}
+<q>Either <m>{{Q}}</m> or <m>{{P}}</m>.</q>
+                    {{/QP0}}
+                    {{#PQ1}}
+<q><m>{{P}}</m> or <m>{{Q}}</m>.</q>
+                    {{/PQ1}}
+                    {{#QP1}}
+<q><m>{{Q}}</m> or <m>{{P}}</m>.</q>
+                    {{/QP1}}
+                {{/disjunction}}
+                {{#conjunction}}
+                    {{#PQ0}}
+<q>Both <m>{{P}}</m> and <m>{{Q}}</m>.</q>
+                    {{/PQ0}}
+                    {{#QP0}}
+<q>Both <m>{{Q}}</m> and <m>{{P}}</m>.</q>
+                    {{/QP0}}
+                    {{#PQ1}}
+<q><m>{{P}}</m> and <m>{{Q}}</m>.</q>
+                    {{/PQ1}}
+                    {{#QP1}}
+<q><m>{{Q}}</m> and <m>{{P}}</m>.</q>
+                    {{/QP1}}
+                {{/conjunction}}
+                {{#implication}}
+                    {{#PQ0}}
+<q>If <m>{{P}}</m> then <m>{{Q}}</m>.</q>
+                    {{/PQ0}}
+                    {{#QP0}}
+<q>If <m>{{Q}}</m> then <m>{{P}}</m>.</q>
+                    {{/QP0}}
+                    {{#PQ1}}
+<q><m>{{Q}}</m> if <m>{{P}}</m>.</q>
+                    {{/PQ1}}
+                    {{#QP1}}
+<q><m>{{P}}</m> if <m>{{Q}}</m>.</q>
+                    {{/QP1}}
+                {{/implication}}
+                {{#biconditional}}
+                    {{#PQ0}}
+<q><m>{{P}}</m> if and only if <m>{{Q}}</m>.</q>
+                    {{/PQ0}}
+                    {{#QP0}}
+<q><m>{{Q}}</m> if and only if <m>{{P}}</m>.</q>
+                    {{/QP0}}
+                    {{#PQ1}}
+<q><m>{{Q}}</m> exactly when <m>{{P}}</m>.</q>
+                    {{/PQ1}}
+                    {{#QP1}}
+<q><m>{{P}}</m> exactly when <m>{{Q}}</m>.</q>
+                    {{/QP1}}
+                {{/biconditional}}
+            </p>
+        </statement>
+        <task>
+            <statement>
+                <p>
+Write this statement symbolically
+using the symbols <m>P,Q,\wedge,\vee,\rightarrow,\leftrightarrow</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                {{#disjunction}}
+                    {{#PQ0}}
+                        <m>P\vee Q</m>
+                    {{/PQ0}}
+                    {{#QP0}}
+                        <m>Q\vee P</m>
+                    {{/QP0}}
+                    {{#PQ1}}
+                        <m>P\vee Q</m>
+                    {{/PQ1}}
+                    {{#QP1}}
+                        <m>Q\vee P</m>
+                    {{/QP1}}
+                {{/disjunction}}
+                {{#conjunction}}
+                    {{#PQ0}}
+                        <m>P\wedge Q</m>
+                    {{/PQ0}}
+                    {{#QP0}}
+                        <m>Q\wedge P</m>
+                    {{/QP0}}
+                    {{#PQ1}}
+                        <m>P\wedge Q</m>
+                    {{/PQ1}}
+                    {{#QP1}}
+                        <m>Q\wedge P</m>
+                    {{/QP1}}
+                {{/conjunction}}
+                {{#implication}}
+                    {{#PQ0}}
+                        <m>P\rightarrow Q</m>
+                    {{/PQ0}}
+                    {{#QP0}}
+                        <m>Q\rightarrow P</m>
+                    {{/QP0}}
+                    {{#PQ1}}
+                        <m>P\rightarrow Q</m>
+                    {{/PQ1}}
+                    {{#QP1}}
+                        <m>Q\rightarrow P</m>
+                    {{/QP1}}
+                {{/implication}}
+                {{#biconditional}}
+                    {{#PQ0}}
+                        <m>P\leftrightarrow Q</m>
+                    {{/PQ0}}
+                    {{#QP0}}
+                        <m>Q\leftrightarrow P</m>
+                    {{/QP0}}
+                    {{#PQ1}}
+                        <m>P\leftrightarrow Q</m>
+                    {{/PQ1}}
+                    {{#QP1}}
+                        <m>Q\leftrightarrow P</m>
+                    {{/QP1}}
+                {{/biconditional}}
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+Identify this statement as a disjunction, conjunction, implication,
+or biconditional.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                {{#disjunction}}
+                    Disjunction.
+                {{/disjunction}}
+                {{#conjunction}}
+                    Conjunction.
+                {{/conjunction}}
+                {{#implication}}
+                    Implication.
+                {{/implication}}
+                {{#biconditional}}
+                    Biconditional.
+                {{/biconditional}}
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+Determine the truth value of this statement.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    {{#truth}}True.{{/truth}}
+                    {{^truth}}False.{{/truth}}
+                </p>
+            </answer>
+        </task>
+    </task>
+    {{/statements}}
+</exercise>
