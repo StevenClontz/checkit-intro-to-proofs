@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.2">
+    <statement>
+        <p>
+Consider the following intervals.
+        </p>
+        <ul>
+            {{#intervals}}
+                <li>
+                    <p>
+<m>{{label}} = {{interval}}</m>
+                    </p>
+                </li>
+            {{/intervals}}
+        </ul>
+        <p>
+Answer the following about these intervals and their intersection and union.
+        </p>
+    </statement>
+    <task>
+        <statement>
+            <p>
+Illustrate each interval on a number line.
+            </p>
+        </statement>
+        <answer>
+            <p>
+(illustration not provided)
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+Describe their intersection and union using little <m>\cap,\cup</m> notation
+and both big <m>\bigcap,\bigcup</m> notations.
+            </p>
+        </statement>
+        <answer>
+            <p>
+Intersection:
+<m>\displaystyle {{little_int}} = \bigcap_{n=0}^2 {{bigcount_label}} = 
+\bigcap_{k\in\{ {{index_set}} \}} {{set_letter}}_k</m>
+            </p>
+            <p>
+Union:
+<m>\displaystyle {{little_uni}} = \bigcup_{n=0}^2 {{bigcount_label}} = 
+\bigcup_{k\in\{ {{index_set}} \}} {{set_letter}}_k</m>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+Explain how to find the interval equal to their intersection.
+            </p>
+        </statement>
+        <answer>
+            <p>
+<m>\displaystyle 
+\bigcap_{k\in\{ {{index_set}} \}} {{set_letter}}_k = {{intersection}}</m>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+Explain how to find the interval equal to their union.
+            </p>
+        </statement>
+        <answer>
+            <p>
+<m>\displaystyle 
+\bigcup_{k\in\{ {{index_set}} \}} {{set_letter}}_k = {{union}}</m>
+            </p>
+        </answer>
+    </task>
+</exercise>

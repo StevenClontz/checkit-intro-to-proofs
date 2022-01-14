@@ -85,5 +85,14 @@ Illustrate Cartesian products and squared sets, and describe them
 using set notation.
             </description>
         </outcome>
+        <outcome>
+            <title>Intersections and Unions</title>
+            <slug>ST5</slug>
+            <path>outcomes/ST/ST5</path>
+            <description>
+Express finite intersections and unions of intervals using big operators
+and index sets, and compute their results.
+            </description>
+        </outcome>
     </outcomes>
 </bank>
