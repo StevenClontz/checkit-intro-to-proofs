@@ -1,4 +1,4 @@
-CheckIt.load("../../library/common.sage")
+CheckIt.load("library/common.sage")
 
 def generator():
     Ptrue = choice([True,False])

@@ -1,4 +1,4 @@
-CheckIt.load("../../library/common.sage")
+CheckIt.load("library/common.sage")
 import sage.logic.logicparser as logicparser
 
 def generator():
