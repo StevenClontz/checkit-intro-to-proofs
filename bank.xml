@@ -76,5 +76,14 @@ Validate membership and subset relations for sets
 and power sets of integers.
             </description>
         </outcome>
+        <outcome>
+            <title>Cartesian Products</title>
+            <slug>ST4</slug>
+            <path>outcomes/ST/ST4</path>
+            <description>
+Illustrate Cartesian products and squared sets, and describe them 
+using set notation.
+            </description>
+        </outcome>
     </outcomes>
 </bank>

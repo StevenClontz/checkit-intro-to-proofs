@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.2">
+    <statement>
+        <p>
+Let <m>A= {{A}}</m> and <m>B= {{B}}</m>.
+        </p>
+    </statement>
+    {{#products}}
+        <task>
+            <statement>
+                <p>
+    Consider <m>{{product}}</m>.
+                </p>
+            </statement>
+            <task>
+                <statement>
+                    <p>
+    Explain how to determine the cardinality of this set
+    without counting.
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+    <m>{{cardinality}}</m>
+                    </p>
+                </answer>
+            </task>
+            <task>
+                <statement>
+                    <p>
+    Write this set using set listing notation.
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+    <m>\left\{ {{set_list}} \right\}</m>
+                    </p>
+                </answer>
+            </task>
+            <task>
+                <statement>
+                    <p>
+    Illustrate the points of <m>{{product}}</m> in the <m>xy</m> plane.
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+    (illustration not provided)
+                    </p>
+                </answer>
+            </task>
+        </task>
+    {{/products}}
+</exercise>
