@@ -1,7 +1,7 @@
 import string
 
 def parse_text(filename):
-    with open(f"{filename}.txt") as f:
+    with open(f"library/{filename}.txt") as f:
         return [word.strip() for word in f.readlines() if word[0].isalpha()]
 
 OBJECT_LIST = parse_text("objects")

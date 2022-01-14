@@ -1,4 +1,4 @@
-CheckIt.load("library/common.sage")
+load("library/common.sage")
 
 def generator():
     # statement

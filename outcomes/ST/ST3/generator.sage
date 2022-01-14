@@ -1,4 +1,4 @@
-CheckIt.load("library/common.sage")
+load("library/common.sage")
 
 def generator():
     odd = 2*randrange(-4,4)+1

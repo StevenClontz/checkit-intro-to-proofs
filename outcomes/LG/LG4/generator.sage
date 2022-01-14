@@ -1,5 +1,5 @@
-CheckIt.load("library/common.sage")
 import sage.logic.logicparser as logicparser
+load("library/common.sage")
 
 def generator():
     props = list("PQRS")
