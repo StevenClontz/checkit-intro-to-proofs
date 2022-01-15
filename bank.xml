@@ -94,5 +94,14 @@ Express finite intersections and unions of intervals using big operators
 and index sets, and compute their results.
             </description>
         </outcome>
+        <outcome>
+            <title>Direct, Contrapositive, and Contradiction Proofs</title>
+            <slug>PF1</slug>
+            <path>outcomes/PF/PF1</path>
+            <description>
+Write direct proofs, proofs by contrapositive, and proofs by contradiction
+for simple set-theoretic conditional statements.
+            </description>
+        </outcome>
     </outcomes>
 </bank>
