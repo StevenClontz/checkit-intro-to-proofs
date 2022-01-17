@@ -95,11 +95,29 @@ and index sets, and compute their results.
             </description>
         </outcome>
         <outcome>
-            <title>Direct, Contrapositive, and Contradiction Proofs</title>
+            <title>Direct Proofs</title>
             <slug>PF1</slug>
             <path>outcomes/PF/PF1</path>
             <description>
-Write direct proofs, proofs by contrapositive, and proofs by contradiction
+Write direct proofs
+for simple set-theoretic conditional statements.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Proofs of Contrapositives</title>
+            <slug>PF2</slug>
+            <path>outcomes/PF/PF2</path>
+            <description>
+Write proofs for contrapositives
+of simple set-theoretic conditional statements.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Proofs by Contradiction</title>
+            <slug>PF3</slug>
+            <path>outcomes/PF/PF3</path>
+            <description>
+Write proofs by contradiction
 for simple set-theoretic conditional statements.
             </description>
         </outcome>
