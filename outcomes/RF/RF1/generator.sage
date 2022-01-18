@@ -57,35 +57,69 @@ def generator():
     a,b,c,d = elements[1]
     s = symbols[1]
     if choice([True,False]):
-        #non-strict (non-linear)
-        relation = Set([
-            (a,a),(a,b),(a,c),(a,d),
-            (b,b),(b,d),
-            (c,c),(c,d),
-            (d,d),
-        ])
-        relations += [{
-            "relation": relation,
-            "label": s,
-            "property": "a non-strict partial order",
-            "reason": f"<m>{a}{s} {b}{s} {d}</m> "+\
-                f"and <m>{a}{s} {c}{s} {d}</m>",
-            "domain": Set(elements[1]),
-        }]
+        #non-strict
+        if choice([True,False]):
+            #(non-linear)
+            relation = Set([
+                (a,a),(a,b),(a,c),(a,d),
+                (b,b),(b,d),
+                (c,c),(c,d),
+                (d,d),
+            ])
+            relations += [{
+                "relation": relation,
+                "label": s,
+                "property": "a non-strict partial order",
+                "reason": f"<m>{a}{s} {b}{s} {d}</m> "+\
+                    f"and <m>{a}{s} {c}{s} {d}</m>",
+                "domain": Set(elements[1]),
+            }]
+        else:
+            #(linear)
+            relation = Set([
+                (a,a),(a,b),(a,c),(a,d),
+                (b,b),(b,c),(b,d),
+                (c,c),(c,d),
+                (d,d),
+            ])
+            relations += [{
+                "relation": relation,
+                "label": symbols[1],
+                "property": "a non-strict partial order",
+                "reason": f"<m>{a}{s} {b}{s} {c}{s} {d}</m>",
+                "domain": Set(elements[1]),
+            }]
     else:
-        #strict (linear)
-        relation = Set([
-            (a,b),(a,c),(a,d),
-            (b,c),(b,d),
-            (c,d),
-        ])
-        relations += [{
-            "relation": relation,
-            "label": symbols[1],
-            "property": "a strict partial order",
-            "reason": f"<m>{a}{s} {b}{s} {c}{s} {d}</m>",
-            "domain": Set(elements[1]),
-        }]
+        #strict
+        if choice([True,False]):
+            #(non-linear)
+            relation = Set([
+                (a,b),(a,c),(a,d),
+                (b,d),
+                (c,d),
+            ])
+            relations += [{
+                "relation": relation,
+                "label": s,
+                "property": "a strict partial order",
+                "reason": f"<m>{a}{s} {b}{s} {d}</m> "+\
+                    f"and <m>{a}{s} {c}{s} {d}</m>",
+                "domain": Set(elements[1]),
+            }]
+        else:
+            #(linear)
+            relation = Set([
+                (a,b),(a,c),(a,d),
+                (b,c),(b,d),
+                (c,d),
+            ])
+            relations += [{
+                "relation": relation,
+                "label": symbols[1],
+                "property": "a strict partial order",
+                "reason": f"<m>{a}{s} {b}{s} {c}{s} {d}</m>",
+                "domain": Set(elements[1]),
+            }]
     
     # none
     a,b,c,d = elements[2]
