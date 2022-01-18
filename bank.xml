@@ -147,5 +147,13 @@ Evaluate sums given in sigma notation, and convert finite sums into
 sigma notation.
             </description>
         </outcome>
+        <outcome>
+            <title>Induction</title>
+            <slug>SM2</slug>
+            <path>outcomes/SM/SM2</path>
+            <description>
+Prove sum formulas by induction.
+            </description>
+        </outcome>
     </outcomes>
 </bank>

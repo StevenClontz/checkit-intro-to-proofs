@@ -211,4 +211,4 @@ def sum_formula(i,exp,start=0,end=None):
         exp.coefficient(i,1)*x*(x+1)/2,
         exp.coefficient(i,2)*x*(x+1)*(2*x+1)/6
     ])
-    return formula(x=end)-formula(x=(start-1))
+    return (formula(x=end)-formula(x=(start-1))).expand()

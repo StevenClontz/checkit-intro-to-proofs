@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.2">
+    <statement>
+        <p>
+Use induction to prove the following identity
+for all integers <m>{{end}} \geq {{start}}</m>.
+            <m style="display">
+\sum_{ {{k}} = {{start}} }^{ {{end}} } \left( {{addend}} \right)
+=
+{{sum}}
+            </m>
+        </p>
+    </statement>
+    <answer>
+        <p>
+(proof not provided)
+        </p>
+    </answer>
+</exercise>
