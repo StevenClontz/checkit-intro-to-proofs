@@ -63,7 +63,7 @@ def contradict_inequality(ineq):
         return ineq.lhs()>ineq.rhs()
 
 def random_set_conditional(allow_subtraction=True):
-    sets = sample(list("ABCDEHJKLMNPQRSUVWXYZ"),3)
+    sets = sample(list("ABCDEHJKLMNPQRUVWXYZ"),3)
     if allow_subtraction:
         roll = randrange(10)
     else:
@@ -167,3 +167,35 @@ def random_set_conditional(allow_subtraction=True):
         "hypothesis": hypothesis,
         "conclusion": conclusion,
     }
+
+def random_equal_sets():
+    sets = sample(list("ABCDEHJKLMNPQRUVWXYZ"),3)
+    roll = randrange(4)
+    if roll==0:
+        combos = [
+            choice([
+                rf"({sets[0]}\cap {sets[1]})\cup {sets[2]}",
+                rf"{sets[2]}\cup ({sets[0]}\cap {sets[1]})",
+            ]),
+            rf"({sets[0]}\cup {sets[2]})\cap ({sets[1]}\cup {sets[2]})"
+        ]
+    elif roll==1:
+        combos = [
+            choice([
+                rf"({sets[0]}\cup {sets[1]})\cap {sets[2]}",
+                rf"{sets[2]}\cap ({sets[0]}\cup {sets[1]})",
+            ]),
+            rf"({sets[0]}\cap {sets[2]})\cup ({sets[1]}\cap {sets[2]})"
+        ]
+    elif roll==2:
+        combos = [
+            rf"{sets[0]}\setminus ({sets[1]}\cup {sets[2]})",
+            rf"({sets[0]}\setminus {sets[1]})\cap ({sets[0]}\setminus {sets[2]})"
+        ]
+    elif roll==3:
+        combos = [
+            rf"{sets[0]}\setminus ({sets[1]}\cap {sets[2]})",
+            rf"({sets[0]}\setminus {sets[1]})\cup ({sets[0]}\setminus {sets[2]})"
+        ]
+    shuffle(combos)
+    return combos

@@ -121,5 +121,13 @@ Write proofs by contradiction
 for simple set-theoretic conditional statements.
             </description>
         </outcome>
+        <outcome>
+            <title>Biconditional Proofs</title>
+            <slug>PF4</slug>
+            <path>outcomes/PF/PF4</path>
+            <description>
+Express set equality as a biconditional statement, and prove such statements.
+            </description>
+        </outcome>
     </outcomes>
 </bank>
