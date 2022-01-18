@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.2">
+    <statement>
+        <p>
+Complete the following tasks related to sigma notation.
+        </p>
+    </statement>
+    {{#first}}
+        <task>
+            <statement>
+                <p>
+Expand and evaluate <m>\displaystyle 
+\sum_{ {{k}} = {{start}} }^{ {{end}} } \left( {{addend}} \right)</m>.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>
+{{#terms}}( {{.}} ) +{{/terms}} ( {{last_term }} ) = {{sum}}
+                    </m>
+                </p>
+            </answer>
+        </task>
+    {{/first}}
+    {{#second}}
+        <task>
+            <statement>
+                <p>
+Express the following sum using sigma notation.
+<m style="display">{{#terms}}( {{.}} ) +{{/terms}} \dots + ( {{last_term }} )</m>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>\displaystyle
+\sum_{ {{k}} = {{start}} }^{ {{end}} } \left( {{addend}} \right)
+                    </m>
+                </p>
+            </answer>
+        </task>
+    {{/second}}
+</exercise>

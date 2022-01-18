@@ -138,5 +138,14 @@ and prove such statements.
 Write and distinguish between existence and constructive proofs.
             </description>
         </outcome>
+        <outcome>
+            <title>Sigma Notation</title>
+            <slug>SM1</slug>
+            <path>outcomes/SM/SM1</path>
+            <description>
+Evaluate sums given in sigma notation, and convert finite sums into
+sigma notation.
+            </description>
+        </outcome>
     </outcomes>
 </bank>

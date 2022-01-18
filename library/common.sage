@@ -199,3 +199,16 @@ def random_equal_sets():
         ]
     shuffle(combos)
     return combos
+
+def sum_formula(i,exp,start=0,end=None):
+    # i is variable of formula exp used in summation
+    # supports terms i^0 through i^2 in exp only
+    if end is None:
+        end = var("n")
+    x = var("x")
+    formula = sum([
+        exp.coefficient(i,0)*x,
+        exp.coefficient(i,1)*x*(x+1)/2,
+        exp.coefficient(i,2)*x*(x+1)*(2*x+1)/6
+    ])
+    return formula(x=end)-formula(x=(start-1))
