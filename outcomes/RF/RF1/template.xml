@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.2">
+    <statement>
+        <p>
+Determine if each relation is a strict partial order,
+a non-strict partial order, an equivalence relation, or none of these.
+        </p>
+    </statement>
+    {{#relations}}
+        <task>
+            <statement>
+                <p>
+The relation <m>{{label}}</m> on <m>{{domain}}</m> defined by:
+                    <m style="display">
+{{label}} = {{relation}}
+                    </m>
+                </p>
+            </statement>
+            <answer>
+                <p>
+The relation <m>{{label}}</m> is {{property}}. ({{{reason}}})
+                </p>
+            </answer>
+        </task>
+    {{/relations}}
+</exercise>

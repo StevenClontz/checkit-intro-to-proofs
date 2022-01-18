@@ -155,5 +155,14 @@ sigma notation.
 Prove sum formulas by induction.
             </description>
         </outcome>
+        <outcome>
+            <title>Relation Properties</title>
+            <slug>RF1</slug>
+            <path>outcomes/RF/RF1</path>
+            <description>
+Determine if finite binary relations are (strict) partial orders or
+equivalence relations.
+            </description>
+        </outcome>
     </outcomes>
 </bank>
