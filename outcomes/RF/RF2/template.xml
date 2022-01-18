@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.2">
+    <statement>
+        <p>
+Let
+<m>{{A}} = \left\{ {{Aset}} \right\}</m>,
+<m>{{B}} = \left\{ {{Bset}} \right\}</m>, 
+<m>{{C}} = \left\{ {{Cset}} \right\}</m>, and
+<m>{{D}} = \left\{ {{Dset}} \right\}</m>.
+        </p>
+        <p>
+Define 
+<m>{{f}} : {{A}} \to {{B}}</m>,
+<m>{{g}} : {{B}} \to {{C}}</m>, and 
+<m>{{h}} : {{C}} \to {{D}}</m> by:
+            <m style="display">
+{{f}} = \left\{ {{fset}} \right\}
+            </m>
+            <m style="display">
+{{g}} = \left\{ {{gset}} \right\}
+            </m>
+            <m style="display">
+{{h}} = \left\{ {{hset}} \right\}
+            </m>
+        </p>
+    </statement>
+    <task>
+        <statement>
+            <p>
+Draw an arrow diagram illustrating these sets and functions.
+            </p>
+        </statement>
+        <answer>
+            <p>
+(illustration not provided)
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+Describe the domain and codomain of the function <m>{{comp}}</m>,
+and draw its own arrow diagram.
+            </p>
+        </statement>
+        <answer>
+            <p>
+The domain of <m>{{comp}}</m> is <m>{{compD}}</m>
+and its codomain is <m>{{compCD}}</m>.
+            </p>
+            <p>
+(illustration not provided)
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+Explain why each of these functions is injective or not,
+surjective or not, and bijective or not.
+            </p>
+        </statement>
+        <task>
+            <statement>
+                <p>
+<m>{{f}}</m>
+                </p>
+            </statement>
+            <answer>
+                <p>
+<m>{{f}}</m> is {{f_props}}.
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+<m>{{g}}</m>
+                </p>
+            </statement>
+            <answer>
+                <p>
+<m>{{g}}</m> is {{g_props}}.
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+<m>{{h}}</m>
+                </p>
+            </statement>
+            <answer>
+                <p>
+<m>{{h}}</m> is {{h_props}}.
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+<m>{{comp}}</m>
+                </p>
+            </statement>
+            <answer>
+                <p>
+<m>{{comp}}</m> is {{comp_props}}.
+                </p>
+            </answer>
+        </task>
+    </task>
+</exercise>

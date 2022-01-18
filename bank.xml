@@ -164,5 +164,15 @@ Determine if finite binary relations are (strict) partial orders or
 equivalence relations.
             </description>
         </outcome>
+        <outcome>
+            <title>Function Properties</title>
+            <slug>RF2</slug>
+            <path>outcomes/RF/RF2</path>
+            <description>
+Draw arrow diagrams for finite functions and their compositions, describe 
+their domains and codomains, identify them as injective or surjective, and 
+describe their inverses when possible.
+            </description>
+        </outcome>
     </outcomes>
 </bank>
