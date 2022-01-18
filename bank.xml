@@ -140,8 +140,8 @@ Write and distinguish between existence and constructive proofs.
         </outcome>
         <outcome>
             <title>Sigma Notation</title>
-            <slug>SM1</slug>
-            <path>outcomes/SM/SM1</path>
+            <slug>IN1</slug>
+            <path>outcomes/IN/IN1</path>
             <description>
 Evaluate sums given in sigma notation, and convert finite sums into
 sigma notation.
@@ -149,8 +149,8 @@ sigma notation.
         </outcome>
         <outcome>
             <title>Induction</title>
-            <slug>SM2</slug>
-            <path>outcomes/SM/SM2</path>
+            <slug>IN2</slug>
+            <path>outcomes/IN/IN2</path>
             <description>
 Prove sum formulas by induction.
             </description>
