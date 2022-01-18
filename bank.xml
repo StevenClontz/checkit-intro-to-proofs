@@ -126,7 +126,16 @@ for simple set-theoretic conditional statements.
             <slug>PF4</slug>
             <path>outcomes/PF/PF4</path>
             <description>
-Express set equality as a biconditional statement, and prove such statements.
+Express set equality as a biconditional statement,
+and prove such statements.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Existence and Constructive Proofs</title>
+            <slug>PF5</slug>
+            <path>outcomes/PF/PF5</path>
+            <description>
+Write and distinguish between existence and constructive proofs.
             </description>
         </outcome>
     </outcomes>

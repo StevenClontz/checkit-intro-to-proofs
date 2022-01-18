@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.2">
+    <statement>
+        <p>
+Recall the following theorem from algebra: whenever <m>f</m>
+is an odd-degree polynomial with real-valued coefficients,
+then <m>f(x)=0</m> has a solution.
+        </p>
+        <p>
+Consider the following claim:
+there exists a real number <m>x</m> such that
+<m>{{equation}}</m>.
+        </p>
+    </statement>
+    <task>
+        <statement>
+            <p>
+Write an existence proof of this claim.
+            </p>
+        </statement>
+        <answer>
+            <p>
+(proof not provided)
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+Write a constructive proof of this claim.
+            </p>
+        </statement>
+        <answer>
+            <p>
+Let <m>x={{solution}}</m>...
+            </p>
+        </answer>
+    </task>
+</exercise>
