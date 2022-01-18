@@ -174,5 +174,13 @@ their domains and codomains, identify them as injective or surjective, and
 describe their inverses when possible.
             </description>
         </outcome>
+        <outcome>
+            <title>Finite and Infinite Cardinalities</title>
+            <slug>RF3</slug>
+            <path>outcomes/RF/RF3</path>
+            <description>
+Identify sets of real numbers as finite, infinite, countable, and uncountable.
+            </description>
+        </outcome>
     </outcomes>
 </bank>
