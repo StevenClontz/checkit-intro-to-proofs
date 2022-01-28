@@ -2,3 +2,4 @@ docs
 private-builds
 dashboard.ipynb
 .seeds.json
+*.ipynb.sage-jupyter2 
