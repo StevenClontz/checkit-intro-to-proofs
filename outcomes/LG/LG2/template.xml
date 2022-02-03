@@ -80,10 +80,10 @@ Consider the following statement.
 <q><m>{{Q}}</m> if and only if <m>{{P}}</m>.</q>
                     {{/QP0}}
                     {{#PQ1}}
-<q><m>{{Q}}</m> exactly when <m>{{P}}</m>.</q>
+<q><m>{{P}}</m> exactly when <m>{{Q}}</m>.</q>
                     {{/PQ1}}
                     {{#QP1}}
-<q><m>{{P}}</m> exactly when <m>{{Q}}</m>.</q>
+<q><m>{{Q}}</m> exactly when <m>{{P}}</m>.</q>
                     {{/QP1}}
                 {{/biconditional}}
             </p>
