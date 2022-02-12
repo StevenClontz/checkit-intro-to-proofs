@@ -85,5 +85,7 @@ def generator():
 
     shuffle(elements)
     return {
-        "elements": elements,
+        "data": {
+            "elements": elements,
+        }
     }

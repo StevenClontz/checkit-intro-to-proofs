@@ -1,4 +1,6 @@
 load("library/common.sage")
 
 def generator():
-    return random_set_conditional(allow_subtraction=True)
+    return {
+        "data": random_set_conditional(allow_subtraction=True)
+    }

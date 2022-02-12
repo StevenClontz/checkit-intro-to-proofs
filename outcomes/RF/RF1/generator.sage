@@ -168,6 +168,8 @@ def generator():
         }]
 
     shuffle(relations)
-    return { 
-        "relations": relations,
+    return {
+        "data": {
+            "relations": relations,
+        }
     }

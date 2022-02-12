@@ -34,9 +34,11 @@ def generator():
     shuffle(statements)
 
     return {
-        "P": P,
-        "Ptrue": Ptrue,
-        "Q": Q,
-        "Qtrue": Qtrue,
-        "statements": statements,
+        "data": {
+            "P": P,
+            "Ptrue": Ptrue,
+            "Q": Q,
+            "Qtrue": Qtrue,
+            "statements": statements,
+        }
     }

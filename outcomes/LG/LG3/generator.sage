@@ -25,11 +25,13 @@ def generator():
     shuffle(statements)
 
     return {
-        "P": P,
-        "Ptrue": Ptrue,
-        "notP": contradict_inequality(P),
-        "Q": Q,
-        "Qtrue": Qtrue,
-        "notQ": contradict_inequality(Q),
-        "statements": statements,
+        "data": {
+            "P": P,
+            "Ptrue": Ptrue,
+            "notP": contradict_inequality(P),
+            "Q": Q,
+            "Qtrue": Qtrue,
+            "notQ": contradict_inequality(Q),
+            "statements": statements,
+        }
     }

@@ -41,12 +41,15 @@ def generator():
     index_set = ",".join([str(starting_index+offset*i) for i in range(3)])
 
     return {
-        "intervals": intervals,
-        "little_int": little_int,
-        "little_uni": little_uni,
-        "bigcount_label": bigcount_label,
-        "index_set": index_set,
-        "set_letter": set_letter,
-        "union": union,
-        "intersection": intersection
+        "data": {
+            "intervals": intervals,
+            "little_int": little_int,
+            "little_uni": little_uni,
+            "bigcount_label": bigcount_label,
+            "index_set": index_set,
+            "set_letter": set_letter,
+            "union": union,
+            "intersection": intersection
+        }
     }
+    

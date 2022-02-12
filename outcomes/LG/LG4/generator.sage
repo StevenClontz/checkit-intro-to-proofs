@@ -32,11 +32,13 @@ def generator():
     P,Q,R,S = [choice([True,False]) for _ in range(4)]
 
     return {
-        "statement": statement,
-        "true": statement.evaluate({"P":P,"Q":Q,"R":R,"S":S}),
-        "negation": negation,
-        "P":P,
-        "Q":Q,
-        "R":R,
-        "S":S,
+        "data": {
+            "statement": statement,
+            "true": statement.evaluate({"P":P,"Q":Q,"R":R,"S":S}),
+            "negation": negation,
+            "P":P,
+            "Q":Q,
+            "R":R,
+            "S":S,
+        }
     }

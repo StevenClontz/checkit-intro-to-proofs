@@ -57,5 +57,7 @@ def generator():
     shuffle(statements)
 
     return {
-        "statements": statements,
+        "data": {
+            "statements": statements,
+        }
     }

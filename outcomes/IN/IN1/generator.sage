@@ -35,7 +35,9 @@ def generator():
     }
 
 
-    return { 
-        "first": first,
-        "second": second,
+    return {
+        "data": {
+            "first": first,
+            "second": second,
+        }
     }

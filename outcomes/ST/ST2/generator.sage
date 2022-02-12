@@ -33,15 +33,17 @@ def generator():
         diff_second = "X"
 
     return {
-        "X": ",".join(X),
-        "Xcard": len(X),
-        "Y": ",".join(Y),
-        "Ycard": len(Y),
-        "union": ",".join(unio),
-        "intersection": ",".join(inte),
-        "complement": ",".join(comp),
-        "complement_set": comp_set,
-        "difference": ",".join(diff),
-        "difference_first": diff_first,
-        "difference_second": diff_second,
+        "data": {
+            "X": ",".join(X),
+            "Xcard": len(X),
+            "Y": ",".join(Y),
+            "Ycard": len(Y),
+            "union": ",".join(unio),
+            "intersection": ",".join(inte),
+            "complement": ",".join(comp),
+            "complement_set": comp_set,
+            "difference": ",".join(diff),
+            "difference_first": diff_first,
+            "difference_second": diff_second,
+        }
     }

@@ -41,13 +41,15 @@ def generator():
     ]
     shuffle(sentences)
     return {
-        "qualifier": qualifier,
-        "stemprop": stemprop,
-        "prop": prop,
-        "obj": obj,
-        "verb": verb,
-        "subjective": subjective,
-        "variable": varx,
-        fake_stem: True,
-        "sentences": sentences,
+        "data": {
+            "qualifier": qualifier,
+            "stemprop": stemprop,
+            "prop": prop,
+            "obj": obj,
+            "verb": verb,
+            "subjective": subjective,
+            "variable": varx,
+            fake_stem: True,
+            "sentences": sentences,
+        }
     }

@@ -22,4 +22,7 @@ def generator():
     ]
 
     shuffle(sets)
-    return { "sets": sets }
+
+    return {
+        "data": { "sets": sets }
+    }

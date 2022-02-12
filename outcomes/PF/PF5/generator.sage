@@ -12,6 +12,8 @@ def generator():
     terms += [constant]
     equation = CheckIt.shuffled_equation(*terms)
     return {
-        "equation": equation,
-        "solution": solution,
+        "data": {
+            "equation": equation,
+            "solution": solution,
+        }
     }

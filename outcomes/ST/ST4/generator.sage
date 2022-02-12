@@ -36,7 +36,9 @@ def generator():
 
     shuffle(products)
     return {
-        "A": Set(A),
-        "B": Set(B),
-        "products": products,
+        "data": {
+            "A": Set(A),
+            "B": Set(B),
+            "products": products,
+        }
     }
