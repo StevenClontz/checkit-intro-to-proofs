@@ -9,20 +9,20 @@ connected
 disconnected
 dense
 compact
-regular
-normal
+semiregular
+quasinormal
 metrizable
 
 # algebra
 commutative
-simple
+abelian
 ideal
 
 # number theory
 prime
 composite
 even
-odd
+divisible
 
 # misc
 finite
