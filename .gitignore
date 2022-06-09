@@ -1,5 +1,3 @@
-docs
-private-builds
+assets/**/seeds.json
+*.ipynb.sage-jupyter2
 dashboard.ipynb
-.seeds.json
-*.ipynb.sage-jupyter2 
